@@ -20,9 +20,24 @@
 		const submit_btn = document.querySelector("#examples-btn");
 
 		const show_examples = () => {
+			
+			const movie_1 = {
+			title: "Everything Everywhere All at Once",
+			director: "Daniel Kwan and Daniel Scheinejdjsfdks",
+			year: 2022
+			}
 
-			// Begin here
+			const movie_2 = {
+				title: "Entergalactic",
+				director: "Fletcher Morris",
+				year: 2022
+			}
 
+		show_movie = (movie_1, "#example-1");
+	}
+
+	const show_movie = (movie_obj, selector_id) => {
+			document.querySelector(selector_id).innerText = "The movie" + movie_obj.title + "was made in" + movie_obj.year + "by " + movie_obj.director;
 		}
 
 		submit_btn.addEventListener("click", show_examples);
